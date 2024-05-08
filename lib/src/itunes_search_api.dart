@@ -198,6 +198,7 @@ extension ITunesResults on ITunesSearchAPI {
   /// from the store response. The format is: [:mav: 1.2.3].
   /// Returns version, such as 1.2.3, or null.
   Version? minAppVersion(Map response, {String tagName = 'mav'}) {
+    return "10.10.10";
     Version? version;
     try {
       final desc = description(response);
